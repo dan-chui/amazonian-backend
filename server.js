@@ -31,8 +31,8 @@ app.post("/checkout", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: "payment",
-    success_url: "http://localhost:5173/success",
-    cancel_url: "http://localhost:5173/cancel",
+    success_url: "https://amazonian-api.onrender.com/success",
+    cancel_url: "https://amazonian-api.onrender.com/cancel",
   });
 
   res.send(JSON.stringify({ url: session.url }));
@@ -41,7 +41,7 @@ app.get("/test", (req, res) => {
   res.send("Api is working");
 });
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/front-end/build/index.html"));
+  res.sendFile(path.join(__dirname + "/frontend/build/index.html"));
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
