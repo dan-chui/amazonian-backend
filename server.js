@@ -31,8 +31,8 @@ app.post("/checkout", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: "payment",
-    success_url: "https://amazonian-api.onrender.com/success",
-    cancel_url: "https://amazonian-api.onrender.com/cancel",
+    success_url: "https://amazonian.onrender.com/success",
+    cancel_url: "https://amazonian.onrender.com/cancel",
   });
 
   res.send(JSON.stringify({ url: session.url }));
