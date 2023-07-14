@@ -3,6 +3,7 @@ const express = require("express");
 const path = require("path");
 var cors = require("cors");
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
+const path = require("path");
 
 // Create Express server
 const app = express();
