@@ -2,17 +2,15 @@ require("dotenv").config();
 const express = require("express");
 var cors = require("cors");
 const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
-const path = require("path");
 
 // Create Express server
 const app = express();
-const port = process.env.PORT || 4000;
 
 // Use Middleware cors
 app.use(cors());
 
 // Recommended by Stripe documentation
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static("public"));
 app.use(express.json());
 
 app.post("/checkout", async (req, res) => {
@@ -35,13 +33,11 @@ app.post("/checkout", async (req, res) => {
     cancel_url: "https://amazonian.onrender.com/cancel",
   });
 
-  res.send(JSON.stringify({ url: session.url }));
-});
-app.get("/test", (req, res) => {
-  res.send("Api is working");
-});
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/frontend/build/index.html"));
+  res.send(
+    JSON.stringify({
+      url: session.url,
+    })
+  );
 });
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(4000, () => console.log("Listening on port 4000!"));
