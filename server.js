@@ -5,6 +5,7 @@ const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 // Create Express server
 const app = express();
+const PORT = process.env.PORT || 4000;
 
 // Use Middleware cors
 app.use(cors());
@@ -40,4 +41,6 @@ app.post("/checkout", async (req, res) => {
   );
 });
 
-app.listen(4000, () => console.log("Listening on port 4000!"));
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
+});
