@@ -24,7 +24,7 @@ Welcome to **Amazonian**!
 
 - **Server**: Built a server using Node.js and Express.js for database and cart editing functionality.
 
-- **UI/UX**: Clean User interface stylized by Taliwind CSS.
+- **UI/UX**: Clean User interface stylized by Tailwind CSS.
 
 - **Mobile Responsive**: Accessible via PC, tablet, or mobile phone systems.
   
