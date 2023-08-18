@@ -31,7 +31,7 @@ app.post("/checkout", async (req, res) => {
     line_items: lineItems,
     mode: "payment",
     success_url: "https://amazonian.onrender.com/success",
-    cancel_url: "https://amazonian.onrender.com/cancel",
+    cancel_url: "https://amazonian.onrender.com/store",
   });
 
   res.send(
