@@ -5,7 +5,8 @@ Welcome to **Amazonian**!
 
 **Amazonian** is a mobile responsive and fully functional shopping cart app. Built using React.js and React Hooks on the front-end; it is supported by Node.js & Express.js on the back-end for server purposes. Shoppers can easily edit their carts, and make purchases using the Stripe payment API.
 
-Please visit (in a new tab): https://amazonian.onrender.com
+- Please visit (in a new tab): https://amazonian.onrender.com
+- **(Note: Stripe Payment might be slow)**
 
 ## 🚀 Technologies
 
@@ -23,7 +24,7 @@ Please visit (in a new tab): https://amazonian.onrender.com
 
 - **Server**: Built a server using Node.js and Express.js for database and cart editing functionality.
 
-- **UI/UX**: Clean User interface stylized by Taliwind CSS.
+- **UI/UX**: Clean User interface stylized by Tailwind CSS.
 
 - **Mobile Responsive**: Accessible via PC, tablet, or mobile phone systems.
   
