@@ -22,7 +22,7 @@ Welcome to **Amazonian**!
 
 - **Modern Framework**: Utilizing React.js and React Hooks to enhance the online shopping experience. <https://github.com/dan-chui/amazonian-frontend>
 
-- **Server**: Built a server using Node.js and Express.js for database and cart editing functionality.
+- **Server**: Built a server using Node.js and Express.js for back-end support and cart editing functionality.
 
 - **UI/UX**: Clean User interface stylized by Tailwind CSS.
 
