@@ -8,7 +8,12 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Use Middleware cors
-app.use(cors());
+const corsOptions = {
+  origin: "*",
+  credentials: true, // Access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+app.use(cors(corsOptions)); // Use after variable declaration
 
 // Recommended by Stripe documentation
 app.use(express.static("public"));
