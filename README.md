@@ -63,14 +63,3 @@ npm run dev
 ```
 npm run build
 ```
-## Demo
-
-Please visit (in a new tab): https://amazonian.onrender.com
-
-![](/public/imgs/screenshot1.webp)
-
-![](/public/imgs/screenshot2.webp)
-
-![](/public/imgs/screenshot3.webp)
-
-![](/public/imgs/screenshot4.webp)
